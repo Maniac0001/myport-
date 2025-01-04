@@ -105,6 +105,13 @@ body {
 }
 
 
+
+
+
+
+
+
+
 /* Card container */
 .card-container {
     display: flex;
@@ -819,7 +826,7 @@ body {
     border-color: rgba(92, 103, 255, 0.8);
     box-shadow: 0 0 10px rgba(92, 103, 255, 0.5);
   }
- 
+
   @media (max-width: 768px) {
     html, body {
       overflow-x: hidden;
@@ -830,15 +837,13 @@ body {
     .card-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 8px; /* Adjust for spacing */
+      gap: 6px; /* Adjust for spacing */
       padding: 16px;
     }
   
     .card {
-      margin-left: 10px;
-      width: 100%;
+      width: 10%;
       aspect-ratio: 1; /* Maintain proportion */
     }
   }
-  
   

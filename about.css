@@ -1,0 +1,150 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pangolin', sans-serif;
+    background: #e0e7ff;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #7b7ff7, #a68ef8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-heading {
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.hero-description {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+
+.hero p {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 2rem;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-grid {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+}
+
+.content-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+    animation: slideIn 1.5s ease-out;
+}
+
+.content-image {
+    flex: 0.5;
+}
+
+.content-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Skills Section */
+.skills {
+    padding: 3rem 2rem;
+    background-color: #f7f9fc;
+    text-align: center;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.skill-item {
+    padding: 1.5rem;
+    background: #e8f4fd;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2d3b6e;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+    background: #c5e3fe;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-heading {
+        font-size: 2.5rem;
+    }
+
+    .content-grid {
+        flex-direction: column;
+    }
+
+    .content-text {
+        font-size: 1rem;
+    }
+}
