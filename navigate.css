@@ -820,20 +820,22 @@ body {
     box-shadow: 0 0 10px rgba(92, 103, 255, 0.5);
   }
   
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
   @media (max-width: 768px) {
     .card-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 16px; /* Adjust as needed */
-      margin: 0 auto; /* Center content */
     }
   }
   
   @media (max-width: 720px) {
     .card-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px; /* Adjust as needed */
-      margin: 0 auto; /* Center content */
+      gap: 12px;
     }
   }
+  
