@@ -835,13 +835,15 @@ body {
     .card-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 16px; /* Adjust as needed */
+      gap: 16px; /* Adjust the gap as needed */
     }
   }
   
   @media (max-width: 720px) {
     .card-container {
-      gap: 12px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px; /* Adjust the gap as needed */
     }
   }
   
