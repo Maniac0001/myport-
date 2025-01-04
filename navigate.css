@@ -822,6 +822,7 @@ body {
   
   @media (max-width: 768px) {
     .card-container {
+      margin-left: 1px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 16px; /* Adjust the gap as needed */
