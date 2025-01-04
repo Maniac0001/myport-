@@ -820,11 +820,6 @@ body {
     box-shadow: 0 0 10px rgba(92, 103, 255, 0.5);
   }
   
-  html, body {
-    width: 100%;
-    overflow-x: hidden;
-  }
-  
   @media (max-width: 768px) {
     .card-container {
       display: grid;
