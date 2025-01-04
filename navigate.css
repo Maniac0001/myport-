@@ -822,6 +822,7 @@ body {
   @media (max-width: 768px) {
     .card-container {
       display: grid;
+      margin-right: 10px;
       grid-template-columns: repeat(2, 1fr);
       gap: 16px; /* Adjust the gap as needed */
     }
@@ -834,10 +835,3 @@ body {
       gap: 12px; /* Adjust the gap as needed */
     }
   }
-  
-
-
-
-
-
-  
